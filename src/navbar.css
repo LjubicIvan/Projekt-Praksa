@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links h3{
+    margin-right: 20px;
+
+}
+
+.search{
+    margin-top: 20px;
+}
+
+.link{
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
