@@ -1,0 +1,49 @@
+
+
+.navbar-admin{
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+}
+
+.users-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.list{
+    
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+}
+.button-del{
+    background-color: rgb(197, 1, 1);
+    color: white;
+}
+.button-del:hover{
+    background-color: rgb(197, 1, 1);
+    color: white;
+}
+
+textarea{
+    background-color: gainsboro;
+}
+
+.create-post{
+    width: 360px;
+    margin: auto;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+button{
+    margin-bottom: 45px;
+}

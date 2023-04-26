@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
-import {Link} from "react-router-dom"
+import {Link, redirect} from "react-router-dom"
 import "./login.css"
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [isAdmin,setIsAdmin]=useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-   
-
-    const response = await fetch('/api/login....', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
-    }); 
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-    } else {
-      console.error('Greska');
+    if(username==="admin" && password==="admin"){
+      setIsAdmin(true)
     }
 
     
   };
+
+  if(isAdmin){
+    return redirect("/admin")
+  }
 
   return (
     <div className='login'>

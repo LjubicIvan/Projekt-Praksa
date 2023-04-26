@@ -11,7 +11,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('/api/ruta...', {
+    const response = await fetch('https://localhost:7248/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,6 +36,7 @@ function Register() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
       </label>
       <label>
@@ -44,6 +45,7 @@ function Register() {
           type="text"
           value={lastname}
           onChange={(e) => setLastName(e.target.value)}
+          required
         />
       </label>
       <label>
@@ -52,6 +54,7 @@ function Register() {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
         />
       </label>
       <label>
@@ -60,6 +63,7 @@ function Register() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </label>
       <label>
@@ -68,6 +72,7 @@ function Register() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
       </label>
       <button type="submit">Register</button>
