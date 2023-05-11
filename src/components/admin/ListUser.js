@@ -8,7 +8,7 @@ function ListUser() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://user_lista');
+      const response = await fetch('https://localhost:7248/api/Users');
       const jsonData = await response.json();
       setData(jsonData);
     };

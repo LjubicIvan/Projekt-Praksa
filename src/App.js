@@ -1,15 +1,15 @@
-import "./App.css";
-import Login from "./Login";
-import Register from "./Register";
+import "../src/style/App.css";
+import Login from "./components/Login";
+import Register from "./components/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import Nopage from "./Nopage";
-import AdminPanel from "./admin/AdminPanel";
-import CreatePost from "./admin/CreatePost";
-import ListUser from "./admin/ListUser";
-import UserPage from "./User/UserPage"
-import PostId from "./User/PostId"
-import AdminList from "./admin/AdminList"
+import Navbar from "./components/Navbar";
+import Nopage from "./components/Nopage";
+import AdminPanel from "./components/admin/AdminPanel";
+import CreatePost from "./components/admin/CreatePost";
+import ListUser from "./components/admin/ListUser";
+import UserPage from "./components/User/UserPage"
+import PostId from "./components/User/PostId"
+import AdminList from "./components/admin/AdminList"
 
 function App() {
   return (

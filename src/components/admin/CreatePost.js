@@ -10,7 +10,7 @@ function CreatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('https://localhost:7248/register', {
+    const response = await fetch('https://localhost:7248/admin/createpost', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
